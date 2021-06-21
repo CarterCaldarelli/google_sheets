@@ -8,7 +8,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('erm_tracker.json', sco
 
 client = gspread.authorize(creds)
 
-tracker = client.open_by_key('1-bfyiw4ImwumqkqPwTz7BcnDqXiC0ofR1TgSnf0ILQk')
+tracker = client.open_by_key('myKey')
 hms = tracker.get_worksheet(0)
 ba_comm_cis = tracker.get_worksheet(1)
 cj = tracker.get_worksheet(2)
